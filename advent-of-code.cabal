@@ -28,6 +28,7 @@ common deps
       attoparsec
     , base >=4.7 && <5
     , bytestring
+    , text
     , containers
     , matrix
     , vector
@@ -36,6 +37,7 @@ common deps
     , mtl
     , pointedlist
     , bytestring-trie
+    , transformers
   other-modules:
       Paths_advent_of_code
   ghc-options:
@@ -43,3 +45,39 @@ common deps
   default-language: Haskell2010
 
 -- Do not touch after this line. aoc-hs will edit it
+executable day-1
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-1.hs
+
+executable day-2
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-2.hs
+
+
+executable day-3
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-3.hs
+
+executable day-4
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-4.hs
+
+executable day-5
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-5.hs
+
+executable day-9
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-9.hs
